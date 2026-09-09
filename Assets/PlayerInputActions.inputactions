@@ -1,0 +1,96 @@
+{
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "da317383-064c-405c-baaa-0e3999c77f9b",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "df29a4a3-90ca-4e38-a11c-06afdfbaf038",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeapLeft",
+                    "type": "Button",
+                    "id": "977daa38-321e-4e2b-98a1-66763242a52c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap(tapDelay=0.3,pressPoint=0.1)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeapRight",
+                    "type": "Button",
+                    "id": "4033e036-0ddb-4264-b298-3c53dff354a8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap(tapDelay=0.3,pressPoint=0.1)",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "d390f8a5-c459-4b53-b4d0-196b11550703",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "f85f31f7-5713-45e6-ad70-204226768969",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "5c58d434-c575-411c-9bbe-e53de3ea4768",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "d775f314-0039-49a7-be6d-86cb1b9d8009",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeapLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0df68c21-2da0-43a4-818f-d90b13932247",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeapRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
